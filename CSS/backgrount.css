@@ -6,4 +6,7 @@ body{
     margin: 0px;
     line-height: 30px;
     scroll-behavior: smooth;
+    background-image: url(../Assets/blob.svg);
+    background-repeat: repeat-y;
+    background-size: 100%;
 }

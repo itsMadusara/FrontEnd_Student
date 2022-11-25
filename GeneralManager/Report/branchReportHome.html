@@ -15,28 +15,29 @@
         <img src="../../Assets/SerWise.png" class="navimg">
         <table>
             <tr>
-                <td><a href="../../Home/home.html">Home</a></td>
-                <td><a href="../Services/services.html">Services</a></td>
-                <td><a href="#">Register</a></td>
-                <td><a href="../../Login/login.html"><button class="button">Login</button></a></td>
+                <td><a href="#" class="nava">Home</a></td>
+                <td><a href="#">Employee</a></td>
+                <td><a href="#">Services</a></td>
+                <td><a href="#">Inventory</a></td>
+                <td><a href="#">Branches</a></td>
+                <td><a href="#">Reports</a></td>
+                <td><button class="button">Logout</button></td>
+                <td><a href="#"><img src="../../Assets/ProfilePic.jpg" class="profile"></a></td>
             </tr>
         </table>
     </header>
 
 
     <div class="two-content-div glass">
-        <div class="two-content-div-one">
+        <div>
             <span class="title">SerWise</span><br>
-            <span class="subtitle">User Register</span>
+            <span class="subtitle">Branch Report</span>
         </div>
         <div class="two-content-div-form">
             <form method="post">
-                <input type="text" placeholder="First Name"> <br>
-                <input type="text" placeholder="Last Name"><br>
-                <input type="text" placeholder="Contact"><br>
-                <input type="email" placeholder="Email"><br>
-                <input type="password" placeholder="Password"><br>
-                <input type="submit" value="Register" class="button">
+                <input type="text" name="branchID" placeholder="Branch ID"><br>
+                <input type="month" name="branchID" placeholder="Select Month"><br>
+                <input type="submit" class="button" value="View Report">
             </form>
         </div>
     </div>
@@ -49,5 +50,7 @@
             &nbsp <a href="#"> Legal Stuff </a></div>
         <div class="center">All Rights Recieved</div>
     </footer>
+
+    <script src="inventory.js"></script>
 </body>
 </html>

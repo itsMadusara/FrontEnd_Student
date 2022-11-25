@@ -9,9 +9,20 @@
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 60vh;
+    padding: 1.5%;
+}
+
+@media (width <= 500px) {
+    .two-content-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .content-div-img{
+    display: flex;
+    align-items: center;
     width: 30vw;
 }
 
@@ -24,6 +35,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 60vh;
+    /* padding: 1.5%; */
 }
 
 .single-content-div.center{
@@ -42,6 +54,7 @@
     margin-left: 5%;
     margin-right: 5%;
     min-height: 60vh;
+    padding: 1.5%;
 }
 
 .home-first-content{
@@ -52,12 +65,22 @@
     width: auto;
     height: 80vh;
     background: url(../Assets/HomeFirstContentDivBackground.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    background-repeat: round;
+    background-repeat: no-repeat;
 }
 
 .home-first-content .title{
     font-size: 150px;
+}
+
+@media (width <=500px){
+    .home-first-content .title{
+        font-size: 90px;
+    }
+    .home-first-content span{
+        font-size: 40px;
+    }
 }
 
 .home-first-content span{
@@ -87,18 +110,18 @@ span{
 
 span.title{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 span.subtitle{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 .two-content-div-form{
     border:1px solid black;
-    padding: 50px 50px;
-    width: 250px;
+    padding: 2% 2%;
+    width: 50%;
 }
 
 .single-content-div-form{
@@ -106,8 +129,8 @@ span.subtitle{
     justify-content: center;
     align-items: center;
     border:1px solid black;
-    padding: 50px 50px;
-    width: 500px;
+    padding: 2% 2%;
+    width: 80%;
 }
 
 form{
@@ -115,7 +138,7 @@ form{
 }
 
 .button{
-    background-color: #EE534F;
+    background-color: #F06A66;
     color: #000000;
     border: 0px;
     height: 30px;
@@ -127,7 +150,7 @@ form{
     
 .button:hover{
     font-weight: bold;
-    background-color: #EE534F;
+    background-color: #F06A66;
     color: #000000;
     border: 0px;
     height: 30px;
@@ -136,19 +159,77 @@ form{
     cursor: pointer;
 }
 
-form input{
+.single-content-div-form form input , .single-content-div-form form select , 
+.two-content-div-form form input ,.two-content-div-form form select{
+    width: 96%;
+}
+
+form input , form select{
     height: 30px;
-    width: 250px;
+}
+
+form input[type="submit"]{
+    width: fit-content;
 }
 
 .drop-down-list{
     height: 30px;
-    width: 250px;
+    width: 100%;
+}
+
+.form-display-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1.5%;
+}
+
+.form-display-table table th{
+    border:1px solid black;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .form-display-table table td{
-    border:1px solid black;
-    height: 30px;
+    padding: 1% 1%;
+    height: 20px;
     width: 250px;
     text-align: center;
+    font-size: 16px;
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    /* padding: 2%; */
+}
+
+.report-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1.5%;
+}
+
+.report-table td{
+    /* border:1px solid black; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.report-table table{
+    line-height: 40px;
+    width: 100%;
 }
